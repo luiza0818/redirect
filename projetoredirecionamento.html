@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspeção</title>
+	
+	<script language=javascript type="text/javascript">
+
+        var now = new Date
+        var formDiario = "https://forms.gle/jEoHLayFi9wt66iK6";
+        var formSemanal = "https://forms.gle/LCmdmj1K9SSaLf5K8";
+        var formMensal = "https://forms.gle/4J1mSZ8xjFSeY9kx5";
+        var formBimestral = "https://forms.gle/XZkXmzdUQ4UEEGt26";
+        var formSemestral = "https://forms.gle/xqAMgsNMrkbt7kmw7";
+        var formAnual = "https://forms.gle/2ifdMABqjg7D8sQd8";
+
+        /*var janeiroSemanal = [3, 11, 19, 27]
+        var janeiroMensal = [6];
+        var fevereiroSemanal = [1, 9, 14, 22]
+        var fevereiroMensal = [2]
+        var marcoSemanal = [10, 16, 24, 30]
+        var marcoMensal = [7];
+        var marcoSemestral = [14];
+        var abrilSemanal = [4, 12, 20, 25]
+        var abrilMensal = [14];
+        var maioSemanal = [2, 12, 16, 24]
+        var maioMensal = [30];
+        var junhoSemanal = [3, 11, 19, 27]
+        var junhoMensal = [6];
+        var julhoSemanal = [5, 13, 18, 27]
+        var julhoMensal = [31];
+        var agostoSemanal = [4, 9, 17, 22]
+        var agostoMensal = [21];
+        var setembroSemanal = [4, 15, 20, 28]
+        var setembroMensal = [13];
+        var setembroSemestral = [25];
+        var outubroSemanal = [6, 10, 18, 25]
+        var outubroMensal = [31];
+        var novembroSemanal = [1, 9, 23, 28]
+        var novembroMensal = [17];
+        var novembroAnual = [14]
+        var dezembroSemanal = [1, 7, 14, 22]
+        var dezembroMensal = [27];*/
+
+
+        const month = ["Janeiro","Fevereiro","Marco","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+            const d = new Date();
+            let name = month[d.getMonth()];
+	
+        /*var convert = [
+                            ['Janeiro',1], 
+                            ['Fevereiro',1],
+                            ['Marco',1],
+                            ['Abril',1],
+                            ['Maio',1],
+                            ['Junho',1],
+                            ['Julho',1],
+                            ['Agosto',1],
+                            ['Setembro',2],
+                            ['Outubro',1],
+                            ['Novembro',1],
+                            ['Dezembro',1]
+                        ];*/
+
+        /*JANEIRO*/
+        if(name=='Janeiro'){
+            var janeiroSemanal = [3, 11, 19, 27]
+
+            if (primeiroDia.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var janeiroMensal = [6];
+
+                if(janeiroMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*FEVEREIRO*/
+        if(name=='Fevereiro'){
+            var fevereiroSemanal = [1, 9, 14, 22]
+
+            if (fevereiroSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var fevereiroMensal = [2];
+
+                if(fevereiroMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*MARÇO*/
+        if(name=='Marco'){
+            var marcoSemanal = [10, 16, 24, 30]
+
+            if (marcoSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var marcoMensal = [7];
+
+                if(marcoMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    var marcoSemestral = [14];
+
+                    if(marcoSemestral.includes(d.getDate())){
+                        result = window.location.href = formSemestral;
+                    }else{
+                        result = window.location.href = formDiario;
+                    }
+                    
+                }
+            }
+
+            
+        }
+            
+        /*ABRIL*/
+        if(name=='Abril'){
+            var abrilSemanal = [4, 12, 20, 25]
+
+            if (abrilSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var abrilMensal = [14];
+
+                if(abrilMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*MAIO*/
+        if(name=='Maio'){
+            var maioSemanal = [3, 11, 16, 24]
+
+            if (maioSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var maioMensal = [30];
+
+                if(maioMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*JUNHO*/
+        if(name=='Junho'){
+            var junhoSemanal = [3, 11, 19, 27]
+
+            if (junhoSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var junhoMensal = [6];
+
+                if(junhoMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*JULHO*/
+        if(name=='Julho'){
+            var julhoSemanal = [5, 13, 18, 27]
+
+            if (julhoSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var julhoMensal = [31];
+
+                if(julhoMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*AGOSTO*/
+        if(name=='Agosto'){
+            var agostoSemanal = [4, 9, 17, 22]
+
+            if (agostoSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var agostoMensal = [21];
+
+                if(agostoMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*SETEMBRO*/
+        if(name=='Setembro'){
+            var setembroSemanal = [4, 15, 20, 28]
+
+            if (setembroSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var setembroMensal = [13];
+
+                if(setembroMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    var setembroSemestral = [25];
+
+                    if (setembroSemestral.includes(d.getDate())){
+                        result = window.location.href = formSemestral;
+                    }else{
+                        result = window.location.href = formDiario;
+                    }
+                }
+            }
+        }
+        
+        /*OUTUBRO*/
+        if(name=='Outubro'){
+            var outubroSemanal = [6, 10, 18, 25]
+
+            if (outubroSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var outubroMensal = [31];
+
+                if(outubroMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    result = window.location.href = formDiario;
+                }
+            }
+
+            
+        }
+
+        /*NOVEMBRO*/
+        if(name=='Novembro'){
+            var novembroSemanal = [1, 9, 23, 28]
+
+            if (novembroSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var novembroMensal = [17];
+
+                if(novembroMensal.includes(d.getDate())){
+                    result = window.location.href = formMensal;
+                }else{
+                    var novembroAnual = [14];
+
+                    if(novembroAnual.includes(d.getDate())){
+                        result = window.location.href = formAnual;
+                    }else{
+                        result = window.location.href = formDiario;
+                    }
+                }
+            }
+
+            
+        }
+
+        /*DEZEMBRO*/
+        if(name=='Dezembro'){
+            var dezembroSemanal = [1, 7, 14, 22]
+
+            if (desembroSemanal.includes(d.getDate())){
+                result = window.location.href = formSemanal;
+            }else{
+                var dezembroMensal = [27];
+
+
+            if(dezembroMensal.includes(d.getDate())){
+            result = window.location.href = formMensal;
+            }else{
+                result = window.location.href = formDiario;
+            }
+            }
+
+          
+        }	
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
